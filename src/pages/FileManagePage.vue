@@ -37,8 +37,8 @@ const onDeleteFileClick = async (key?: string) => {
                     <a class="text-lg font-semibold" :href="`/${file.Key}`" target="_blank">{{ file.Key }}</a>
                     <div class="text-sm text-gray">{{ formatBytes(file.Size ?? 0) }}</div>
                 </div>
-                <div class="ml-auto w-6 h-6 i-mdi-trash-can-outline cursor-pointer"
-                    @click="onDeleteFileClick(file.Key)"></div>
+                <!-- <div class="ml-auto w-6 h-6 i-mdi-trash-can-outline cursor-pointer"
+                    @click="onDeleteFileClick(file.Key)"></div> -->
             </div>
         </div>
     </div>
